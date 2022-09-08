@@ -101,4 +101,4 @@ function checkAnswer() {
   }
 }
 
-/*solve for questions not showing after clicking start, high score click, timer going negative */
+/*solve for questions not showing after clicking start, high score click, timer going negative, submit */
