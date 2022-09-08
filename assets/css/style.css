@@ -1,0 +1,16 @@
+#high-score {
+    position: absolute;
+    top: 12px;
+    left: 20px;
+}
+
+#timer {
+    position: absolute;
+    top: 12px;
+    right: 20px;
+}
+
+.begin-quiz {
+    text-align: center;
+    padding: 180px;
+}
