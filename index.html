@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,35 +8,37 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Code Quiz</title>
 </head>
-<body> 
-<header class="high-score">
-    View High Score
-    <p id="timer"></p>
-</header>
-
-<main>
-    <section class="begin-quiz">
-    <h2>Coding Quiz Challenge</h2>
-    <p>Answer the following questions within the time limit</p>
-    <button class="btn" id="startQuiz">Start Quiz</button>
-    </section>
-    <section class="" id="question-wrapper" style = "display:none">
-        <h2 id="question-title-1"class="question-title"></h2>
-        <ul class="questions">
-        </ul>
-    </section>
-</main>
 
 <body>
-    <h1 id="questions"></h1>
-    <div class="choices"></div>
-</body>
+    <header class="high-score">
+        View High Score
+        <p id="timer"></p>
+    </header>
 
-<section id="score">
-    <h1> You have completed the Quiz</h1>
-    <p id="student-score">Your final score is:</p>
-    <div id="name">Enter Initials</div>
-</section>
-<script src="./assets/js/script.js"></script>
+    <main>
+        <section class="begin-quiz">
+            <h2>Coding Quiz Challenge</h2>
+            <p>Answer the following questions within the time limit</p>
+            <button class="btn" id="startQuiz">Start Quiz</button>
+        </section>
+
+        <section class="" id="question-wrapper" style="display:none">
+            <h2 id="question-title-1" class="question-title"></h2>
+            <ul class="questions">
+            </ul>
+        </section>
+
+        <div id="finished" style="display: none">
+            <h2>Finished!</h2>
+            <p>Your score is:<span id="finalScore"></span></p>
+            <form>
+                <label for="score">High Score Initals:</label>
+                <input list="score" type="text" id="score" name="score">
+                <button><input id="inputBtn" type="submit" value="Submit"></button>
+            </form>
+        </div>
+        
+    </main>
+    <script src="./assets/js/script.js"></script>
 </body>
 </html>
