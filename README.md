@@ -19,6 +19,7 @@
 * THEN I can save my initials and score
 
 ## Live URL:
+https://jbairoso.github.io/codequiz/
 
-
-## Screen Shot
+## Screen Shot:
+![Screenshot](./assets/images/Codequiz.png)
