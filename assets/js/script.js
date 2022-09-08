@@ -3,6 +3,8 @@ var totalSeconds = 75;
 var questionEL = document.getElementById("question-title-1");
 var answerList = document.querySelector(".questions")
 var questionCounter = 0;
+var timerEl = document.getElementById("timer");
+var startBtn = document.getElementById("startQuiz");
 
 var questions = [
     {
@@ -31,3 +33,20 @@ var questions = [
         answer: "3. Inside the head section"
     },
 ];
+
+startBtn.addEventListener("click", startQuiz);
+
+function startQuiz() {
+    setInterval(function(){
+        timerEl.innerHTML = "Timer: " + totalSeconds;
+        totalSeconds --;
+    }, 1000);
+
+    askQuestions();
+
+    questionWrapper.style.display = "block";
+    startDiv.style.display = "none";
+    submitIntials.style.display = "none";
+};
+
+function askQuestions() {}
